@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Trillo-vezba</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="images/logo.png" class="header__logo" />
+        <form class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search hotels"
+          />
+          <button class="search__btn">
+            <svg class="search__icon">
+              <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="user">
+          <div class="user__icon-box">
+            <svg class="user__icon">
+              <use xlink:href="images/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user__notification">7</span>
+          </div>
+          <div class="user__icon-box">
+            <svg class="user__icon">
+              <use xlink:href="images/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user__notification">13</span>
+          </div>
+          <div class="user__box">
+            <img src="images/user.jpg" class="user__photo" />
+            <span class="user__name">Blagoje</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link-active">
+                <svg class="nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-home"></use>
+                </svg>
+                <span class="nav__span">Home</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <svg class="nav__icon">
+                  <use
+                    xlink:href="images/sprite.svg#icon-aircraft-take-off"
+                  ></use>
+                </svg>
+                <span class="nav__span">Flight</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <svg class="nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-key"></use>
+                </svg>
+                <span class="nav__span">Car rents</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <svg class="nav__icon">
+                  <use xlink:href="images/sprite.svg#icon-map"></use>
+                </svg>
+                <span class="nav__span">Tours</span>
+              </a>
+            </li>
+          </ul>
+          <div class="legal">© 2017 by trillo. All rights reserved.</div>
+        </nav>
+        <main>
+          <div class="hotel-view">
+            <!----------- gallery --------->
+            <div class="gallery">
+              <img src="images/hotel-1.jpg" class="gallery__photo" />
+              <img src="images/hotel-2.jpg" class="gallery__photo" />
+              <img src="images/hotel-3.jpg" class="gallery__photo" />
+            </div>
+            <!----------- hotel overview --------->
+            <div class="hotel__overview">
+              <h2 class="hotel__overview-heading">Hotel Las Palmas</h2>
+              <div class="hotel__overview-stars">
+                <svg class="hotel__overview-icon">
+                  <use xlink:href="images/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="hotel__overview-icon">
+                  <use xlink:href="images/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="hotel__overview-icon">
+                  <use xlink:href="images/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="hotel__overview-icon">
+                  <use xlink:href="images/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="hotel__overview-icon">
+                  <use xlink:href="images/sprite.svg#icon-star"></use>
+                </svg>
+              </div>
+              <div class="hotel__overview-location">
+                <svg class="hotel__overview-icon">
+                  <use xlink:href="images/sprite.svg#icon-location-pin"></use>
+                </svg>
+                <button class="btn-inline">Beograd, Srbija</button>
+              </div>
+              <div class="hotel__overview-rating">
+                <span class="hotel__overview-rating--avarage">8.6</span>
+                <span class="hotel__overview-rating--vote">429 votes</span>
+              </div>
+            </div>
+            <!-------------DETAIL ------------>
+            <div class="detail">
+              <div class="description">
+                <p class="description__p">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Animi nisi dignissimos debitis ratione sapiente saepe.
+                  Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                  architecto voluptate.
+                </p>
+                <p class="description__p">
+                  Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                  architecto voluptate delectus, inventore iure aliquid aliquam.
+                </p>
+                <ul class="description__list">
+                  <li class="description__item">Close to the beach</li>
+                  <li class="description__item">
+                    Air conditioning and heating
+                  </li>
+                  <li class="description__item">Breakfast included</li>
+                  <li class="description__item">Pets allowed</li>
+                  <li class="description__item">Free airport shuttle</li>
+                  <li class="description__item">We speak all languages</li>
+                  <li class="description__item">Free wifi in all rooms</li>
+                  <li class="description__item">Perfect for families</li>
+                </ul>
+                <div class="description__recommend">
+                  <p class="description__count">
+                    Lucy and 3 other friends recommend this hotel.
+                  </p>
+                  <div class="description__friends">
+                    <img src="images/user-3.jpg" class="description__photo" />
+                    <img src="images/user-4.jpg" class="description__photo" />
+                    <img src="images/user-5.jpg" class="description__photo" />
+                    <img src="images/user-6.jpg" class="description__photo" />
+                  </div>
+                  .
+                </div>
+              </div>
+              <div class="user__review">
+                <figure class="user__review-box">
+                  <blockquote class="user__review-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Fuga doloremque architecto dicta animi, totam, itaque
+                    officia ex.
+                  </blockquote>
+                  <figcaption class="user__review-details">
+                    <img src="images/user-1.jpg" class="user__review-photo" />
+                    <div class="user__review-info">
+                      <div class="user__review-name">Nick Smith</div>
+                      <div class="user__review-date">Feb 23rd, 2017</div>
+                    </div>
+                    <div class="user__review-rating">7.8</div>
+                  </figcaption>
+                </figure>
+
+                <figure class="user__review-box">
+                  <blockquote class="user__review-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Fuga doloremque architecto dicta animi.
+                  </blockquote>
+                  <figcaption class="user__review-details">
+                    <img src="images/user-2.jpg" class="user__review-photo" />
+                    <div class="user__review-info">
+                      <div class="user__review-name">Mary Thomas</div>
+                      <div class="user__review-date">Sept 13th, 2017</div>
+                    </div>
+                    <div class="user__review-rating">9.3</div>
+                  </figcaption>
+                </figure>
+                <div class="btn-inline">Show more &rarr;</div>
+              </div>
+            </div>
+            <!-------------CALL TO ACTION ------------>
+
+            <div class="cta">
+              <div class="cta__heading">
+                Good news! We have 4 free rooms for your selected dates!
+              </div>
+              <button class="btn">
+                <span class="btn-visible">book now</span>
+                <span class="btn-invisible">only 4 rooms left</span>
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
